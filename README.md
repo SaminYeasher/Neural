@@ -1,4 +1,29 @@
 %%writefile README.md
+
+# 01 Pneumonia Classification using CNN
+
+## Approach
+The goal of this project is to develop a deep learning model capable of identifying Pneumonia from pediatric chest X-ray images. By utilizing a Convolutional Neural Network (CNN), the model automatically learns to detect pathological features—such as increased lung opacity and consolidation—directly from the raw pixel data, fulfilling the requirement of identifying medical conditions based on the image itself.
+
+## Methodology
+- Data Preparation: Images were resized to 150x150 pixels and normalized to a range of [0, 1].
+- Data Augmentation: To improve the model's ability to generalize to new data, training images underwent random transformations including zooming, shearing, and horizontal flipping.
+- CNN Architecture:
+    - Convolutional Layers: Four layers with increasing filters (32, 64, 128, 128) to extract hierarchical spatial features.
+    - Pooling: Max-pooling layers were used after each convolution to reduce dimensionality and computational load.
+    - Regularization: A Dropout layer (50%) was implemented before the final layers to prevent overfitting.
+    - Output: A Sigmoid activation function was used for binary classification (Normal vs. Pneumonia).
+- Training Strategy: The model was trained over 15 epochs using the Adam optimizer and Binary Crossentropy loss.
+
+## Findings
+- High Predictive Power: The model achieved a Final Test Accuracy of 92.79%, demonstrating high reliability in distinguishing healthy lungs from those with pneumonia.
+- Feature Extraction: The success of the model confirms that the CNN effectively identifies lung opacities and infiltrates characteristic of the disease.
+- Generalization: Despite the small validation set provided, the high performance on the separate test set indicates that the model has learned robust features rather than simply memorizing the training data.
+
+
+
+
+
 ## Problem Set 2 
 Bank Marketing Prediction
 
