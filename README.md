@@ -37,6 +37,7 @@ The goal of this project was to develop a predictive model to determine if a ban
 - Model Training: A Logistic Regression model was trained using the Scikit-learn library, with the maximum iterations increased to 1000 to ensure the solver reached convergence.
 - Evaluation: The model performance was assessed using a Confusion Matrix, Accuracy Score, and a detailed Classification Report (Precision, Recall, and F1-Score).
 
+
 ## Findings
 Overall Accuracy: The model achieved an accuracy of approximately 89.88%, indicating strong predictive power for the majority of cases.
 - Confusion Matrix:
